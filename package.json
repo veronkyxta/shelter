@@ -1,0 +1,26 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Veronika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/veronkyxta-JS2020Q3.git/shelter"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/veronkyxta-JS2020Q3#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0"
+  }
+}

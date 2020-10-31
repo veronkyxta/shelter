@@ -1,0 +1,399 @@
+$color-dark-3xl: #292929
+$color-primary: #F1CDB3
+$color-light-s: #FAFAFA
+$color-light-xl: #FFFFFF
+$color-dark-s: #CDCDCD
+$color-dark-l: #545454
+$color-light-l: #F6F6F6
+$color-dark-xl: #4C4C4C
+$color-dark-m: #B2B2B2
+$color-primary-light: #FDDCC4
+
+* 
+    margin: 0
+    padding: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    -o-box-sizing: border-box
+    box-sizing: border-box 
+.wrapper
+    width: 75rem
+    display: flex
+    margin: 0 auto
+    justify-content: space-between
+    align-items: center
+    &__header
+        font-family: Georgia
+        font-weight: 400
+        font-size: 2.75rem
+        line-height: 130%
+        color: $color-dark-xl
+        margin-top: 13.9375rem
+        margin-right: 2.5rem
+        width: 19.375rem
+        height: 7.125rem
+    &__subheader
+        width: 19.375rem
+        height: 7.125rem
+        font-family: Arial
+        font-weight: 400
+        font-size: 0.9375rem
+        line-height: 160%
+        color: $color-dark-s
+.pets-header
+    width: 100%
+    min-height: 7.5rem
+    position: fixed
+    z-index: 1
+    background-color: $color-light-xl
+    display: flex
+    align-items: center
+.pets-logo
+    /** margin-left: 40px **/
+    display: flex
+    flex-direction: column
+    text-align: left
+    &__title
+        font-family: Georgia
+        font-weight: 400
+        font-size: 2rem
+        line-height: 110%
+        letter-spacing: 1.5px
+        color: $color-dark-l
+    &__subtitle
+        margin-top: 10px
+        font-family: Arial
+        font-weight: 400
+        font-size: 0.8125rem
+        line-height: 110%
+        letter-spacing: 1.5px
+        color: $color-dark-3xl
+        text-align: left
+.pets-menu
+    width: 27.6875rem
+    height: 1.6875rem
+    display: flex
+    /** margin-top: 4.75rem **/
+    /** margin-right: 2.5rem **/
+.pets-hamburger
+    display: none
+.pets-list
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin: 0
+    padding: 0
+    &__item
+        align-items: center
+        display: flex
+    &__link
+        font-family: Arial
+        font-weight: 400
+        font-size: 0.9375rem
+        line-height: 160%
+        color: $color-dark-l
+        &_active
+            color: $color-dark-3xl
+        &_line
+            border-bottom: solid 3px $color-primary
+        &:hover
+            border-bottom: solid 3px $color-primary
+            cursor: pointer
+.friends
+    padding-top: 7.5rem
+    min-height: 83.875rem
+    background: $color-light-l
+    padding: 12.5rem 2.5rem 6.25rem 2.5rem
+    &__content
+        display: flex
+        flex-direction: column 
+        align-items: center 
+    &__item
+        display: flex
+        flex-wrap: wrap
+    &__card
+        display: flex
+        flex-direction: column
+        margin-top: 3.75rem
+        margin-right: 2.5rem
+        width: 16.875rem
+        background: $color-light-s
+        border-radius: 9px
+        &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4),
+            margin-top: 1.875rem
+        &:nth-last-child(5), &:nth-last-child(1)
+            margin-right: 0
+        &:hover
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04)
+    &__name
+        margin-top: 1.875rem
+        font-family: Georgia
+        font-weight: 400
+        font-size: 1.44rem
+        text-align: center
+        letter-spacing: 0.06em
+        color: $color-dark-l
+    &__paginations
+        margin-top: 3.75rem
+        &_btn
+            width: 3.25rem
+            height: 3.25rem
+            border: 2px solid $color-primary
+            box-sizing: border-box
+            border-radius: 100px
+            margin-right: 1.25rem
+            outline: none
+            &:nth-last-child(1)
+                margin-right: 0rem
+            &:hover
+                cursor: pointer
+                background: $color-primary-light
+                border: none
+            &-disabled
+                border-color: $color-dark-s
+            &-active
+                border: none
+                background: $color-primary
+.about
+    &__subtitle
+        font-family: Georgia
+        font-weight: 400
+        font-size: 2.19rem
+        line-height: 130%
+        letter-spacing: 0.06em
+        color: $color-dark-l
+        &_pets
+            text-align: center
+.promo
+    &__btn
+        margin-top: 2.5625rem
+        width: 12.9375rem
+        height: 3.25rem
+        background: $color-primary
+        border-radius: 6.25rem
+        font-family: Georgia
+        font-size: 1.0625rem
+        line-height: 130%
+        letter-spacing: 0.06em
+        color: $color-dark-3xl
+        border: none
+        outline: none
+        &:hover
+            cursor: pointer
+            background-color: $color-primary-light
+            
+        &_secondary
+           width: 11.69rem 
+           text-align: center
+           border: 2px solid $color-primary
+           background-color: $color-light-xl
+           margin: 1.875rem auto 1.875rem auto
+           align-items: center
+           &:hover
+               cursor: pointer
+               background: $color-primary-light
+               border: none
+        &_primary
+            width: 16.31rem
+            text-align: center
+            margin-top: 3.75rem
+            &:hover
+                cursor: pointer
+                background-color: $color-primary-light
+.footer
+    padding: 2.5rem 2.5rem 0 2.5rem
+    min-height: 21.875rem
+    background: url('/shelter/assets/images/footer-gradient-background.jpg') center center/cover no-repeat
+    display: flex
+    &__contact_mail, &__contact_tel
+        margin-top: 2.5rem
+        width: 15.6875rem
+        display: flex
+        align-items: center
+        &-text
+            font-family: Georgia
+            font-style: normal
+            font-weight: 400
+            font-size: 1.25rem
+            line-height: 115%
+            letter-spacing: 0.06em
+            color: $color-primary
+            margin-left: 1.25rem
+            text-decoration: none
+    &__location_boston, &__location_london
+        margin-top: 2rem
+        width: 18.875rem
+        display: flex
+        align-items: center 
+
+@media (max-width: 1200px)
+    .wrapper
+        width: 90% 
+    .friends
+        padding: 12.5rem 0rem 6.25rem 0rem
+        &__item
+            width: 71.875rem
+        &__card
+            margin-right: 1.25rem
+
+@media (max-width: 991px)
+    .friends
+        &.wrapper
+            width: 100%
+        &__item
+            width: 100%
+        &__card
+            &:nth-last-child(5)
+                margin-top: 1.875rem
+            &:nth-last-child(5)
+                margin-right: 1.25rem
+        &:hover
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04)
+    .footer
+        &__contact_mail, &__contact_tel
+            margin-top: 2.25rem
+            &-text
+                font-size: 1.125rem
+                margin-left: 1.1rem
+        &__location_boston, &__location_london
+            margin-top: 2rem
+            width: 18.875rem
+            display: flex
+            align-items: center
+    .about
+        &__subtitle
+            &_footer
+                font-size: 1.8rem
+
+@media (max-width: 767px)
+    .wrapper
+        width: 87%
+    .pets-logo
+        margin-right: 5rem
+    .friends
+        padding: 12.5rem 5.6rem 4.75rem 5.6rem
+        &__item
+            width: 37.5rem
+        &__card
+            margin-top: 1.875rem
+            margin-right: 2.5rem
+            &:nth-child(2n)
+                margin-right: 0
+    .footer
+        .wrapper
+            flex-wrap: wrap
+            justify-content: center
+        &__contact
+            margin-right: 2.5rem
+        &__img
+            margin-top: 4rem
+
+@media (max-width: 575px)
+    .pets-header
+        .wrapper
+            width: 85%
+    .pets-header
+        position: relative
+        height: 120px
+        .wrapper
+            display: flex
+            justify-content: space-between
+    .pets-logo
+        margin-right: 0rem
+    .pets-menu
+        width: 0rem
+    .pets-list
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s
+        &_active
+            left: 0
+        &__item
+            padding-rigth: 0
+            border: none
+            margin: 15px 0
+        &__link
+            font-size: 20px
+            color: $color-light-xl
+            &_line
+                border-bottom: none
+            &:hover
+                color: $color-primary-light
+    .hamburger
+        display: block
+        position: absolute
+        right: 30%
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #000000
+            margin-bottom: 10px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .friends
+        padding: 2.625rem 0rem 2.625rem 0rem
+        .wrapper
+            margin-left: 0rem
+            margin-right: 0rem
+        &__item
+            flex-direction: column
+            align-items: center
+            width: 450px
+        &__card
+            margin-right: 0rem
+        &__paginations
+            margin-top: 2.625rem
+            &_btn
+                margin-right: 0.5rem
+    .about
+        &__subtitle
+            &_pets
+                font-size: 1.5rem
+                line-height: 130%
+                letter-spacing: 0.06em
+    .footer
+        padding: 1.875rem 0 0 0
+        .wrapper
+            display: flex
+            flex-direction: column
+            margin-left: 0
+            margin-right: 0
+        &__contact
+            margin-right: 0rem
+            
+            &_mail-text
+                font-size: 1.25rem
+        &__location
+            margin-top: 2.75rem
+
+    .about
+        &__subtitle
+            &_footer
+                font-size: 1.56rem
+                color: $color-light-xl
+                text-align: center
+            
+            
+
+        
